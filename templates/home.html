@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FIREANT</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="static/css/bootstrap.css">
+	</head>
+	<body>
+		<div class="navbar navbar-inverse">
+			<a href="/" class="navbar-brand">FIREANT</a>
+		</div>
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text"> Site built by Darren Midkiff</p>
+				<button class="navbar-btn btn-inverse pull-right" onclick="shutdown()"><span class="glyphicon glyphicon-off" style="color:red"></span></button> 
+			</div>
+		</div>
+
+		<img class="center-block" src="static/img/ajax-loader.gif" id="loading">
+		<img class="center-block" id="stream" onload="hideLoader()" onerror="errorImage()" src="http://192.168.1.43/videostream.cgi?rate=0&amp;user=admin&amp;pwd=" <="" td=""></td>
+		<span class='h1'>&nbsp;</span>
+		<div class="container">
+			<div class="jumbotron">
+				<h4 class="text-center">Drive using wasd or directional keys</h4>
+				<img id="arrows" class="center-block" src="static/img/directionalKeys.png">
+			</div>
+		</div>
+
+
+		<script src="static/js/fireantDrive.js"></script>
+		<script src="static/js/jquery-1.11.2.js"></script>
+		<script src="static/js/bootstrap.js"></script>
+	</body>
+</html>
